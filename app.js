@@ -16,8 +16,8 @@
 let _supabase;
 
 function initSupabaseClient() {
-  const SUPABASE_URL = 'https://imwotvluaibgtbixbvih.supabase.co';
-  const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imltd290dmx1YWliZ3RiaXhidmloIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzcxMTc2NDksImV4cCI6MjA5MjY5MzY0OX0.43dMnnfbSo9Tlp7mhShPw90PEtPHwSIrsWEqYY-9KVw';
+  const SUPABASE_URL = 'https://runrenxiaygkynprcpte.supabase.co';
+  const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJ1bnJlbnhpYXlna3lucHJjcHRlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzcyNjA5MjksImV4cCI6MjA5MjgzNjkyOX0.h2zvZvSD4-PKC_f3ouQhrr7nhzfov1_9wSUyaiAT4eo';
 
   // Support ESM module pattern: window._supabaseCreateClient = createClient
   if (typeof window._supabaseCreateClient === 'function') {
