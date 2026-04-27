@@ -152,9 +152,9 @@ async function loadDataFromDB() {
 
   try {
     const [clientsRes, invoicesRes, notifsRes] = await Promise.all([
-      _supabase.from('clients').select('*').eq('user_id', userId).order('created_at', { ascending: false }),
-      _supabase.from('invoices').select('*').eq('user_id', userId).order('created_at', { ascending: false }),
-      _supabase.from('notifications').select('*').eq('user_id', userId).order('created_at', { ascending: false }).limit(20)
+      _supabase.from('clients').select('*').eq('owner_id', userId).order('created_at', { ascending: false }),
+      _supabase.from('invoices').select('*').eq('owner_id', userId).order('created_at', { ascending: false }),
+      _supabase.from('notifications').select('*').eq('owner_id', userId).order('created_at', { ascending: false }).limit(20)
     ]);
 
     if (clientsRes.error) throw clientsRes.error;
