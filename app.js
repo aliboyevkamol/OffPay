@@ -1867,7 +1867,7 @@ async function loginWithGoogle() {
     const { data, error } = await sb.auth.signInWithOAuth({
       provider: 'google',
       options: {
-        redirectTo: window.location.origin
+        redirectTo: 'https://offpay.uz'
       }
     });
 
